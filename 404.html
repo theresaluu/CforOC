@@ -1,0 +1,28 @@
+---
+layout: default
+title: Page Not Found
+masthead-image: "media/images/sleepingpanda_header.jpg"
+nav-breadcrumbs:
+ - Page Not Found: "/404"
+---
+
+<section>
+    <div class="layout-semibreve">
+        {{ include nav-breadcrumbs.html }}
+        <div class="layout-centered">
+            <h4>Life, Liberty and the Pursuit...</h4>
+            <img src="/media/images/pandas.png">
+            <p>Apologies, but the page you requested could not be found. Perhaps searching will help. Or napping.</p>
+            <form class="search-global" id="search-global" action="https://www.google.com/search" method="get" role="search">
+                <p class="field">
+                    <input type="hidden" name="as_sitesearch" value="www.codeforamerica.org" />
+                    <input type="search" name="q" role="search" autocomplete="off" placeholder="Search" /><!--
+                 --><input type="submit" value="Go" />
+                </p>
+            </form>
+        </div>
+        <div class="layout-semibreve">
+            <p class="isolate text-whisper">Image Credit: <a href="http://www.mischiefchampion.com/style/p/2010/Aug/life_questions">Mischief Champion</a></p>
+        </div>
+    </div>
+</section>

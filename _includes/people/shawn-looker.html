@@ -1,0 +1,60 @@
+{% if include.context == 'people-page' %}
+
+<div class="layout-semibreve h-card">
+
+	<div class="heading">
+		<h2 class="p-name">Shawn Looker</h2>
+	</div>
+
+	<div class="layout-minor">
+
+	    <h4 class="text-whisper layout-tight">Member of</h4>
+	    <ul class="list-no-bullets text-whisper link-invert">
+	    	<li><a href="http://www.codeforamerica.org/cities/lasvegas/">Las Vegas, NV Brigade</a></li>
+	    	<li><a href="{{ include.base }}/geeks/our-geeks/brigade-captains/">Brigade Captains</a></li>
+
+	    </ul>
+
+		<img class="profile-photo u-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.png" />
+	</div>
+
+	<div class="layout-major">
+
+	    <p class="p-note">I'm just a skateboarding developer.  I've been writing software for Zappos.com for the past three years, and I was one of the organizers for the National Civic Day of Hacking for Las Vegas, NV.  I really enjoyed doing a hackathon with the support of the city,  </p>
+
+
+	    <div class="spotlight">
+	    	<h3 class="text-whisper">Contact</h3>
+	    	<table class="table-unstyled table-minor">
+	    		<tr><th>Twitter</th><td><a href="https://twitter.com/godzirra">@godzirra</a></td></tr>
+	    		<tr><th>LinkedIn</th><td><a href="http://www.linkedin.com/profile/view?id=75571184">http://www<wbr>.linkedin<wbr>.com/<wbr>profile/<wbr>view?id=75571184</a></td></tr>
+
+	    	</table>
+	    </div>
+	</div>
+
+</div>
+
+{% elsif include.context == 'brigade-captains' %}
+
+<div class="h-card profile-small">
+    <h3 class="p-name profile-name">Shawn Looker</h3>
+    <img class="u-photo profile-photo" src="{{ include.base }}/media/images/people/generic-brigade-captain.png" />
+    <div class="p-note profile-note">
+        <p>
+            <a href="http://www.codeforamerica.org/cities/lasvegas/">Las Vegas, NV Brigade</a>
+        </p>
+        <p>
+            I'm just a skateboarding developer. I've been writing software for Zappos.com for the past three years, and I was one of the organizers for the National Civic Day of Hacking for Las Vegas, NV. I really enjoyed doing a hackathon with the support of the city.
+        </p>
+        <p>
+            <a class="link-more" href="{{ include.base }}/people/shawn-looker/">More</a>
+        </p>
+        <ul class="list-social list-social-horizontal">
+            <li class="social-linkedin"><a href="http://www.linkedin.com/profile/view?id=75571184">LinkedIn</a></li>
+            <li class="social-twitter"><a href="https://twitter.com/godzirra">@godzirra</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endif %}
